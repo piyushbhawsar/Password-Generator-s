@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>PASSWORD GENERATOR</h1>
+        <input readonly  type="text" placeholder="P A S S W O R D" password-display>
+        <button copy-btn>
+            <span copy-msg></span>
+            <i class="fa-solid fa-copy" style="font-size:28px"></i>
+        </button>
+        
+        <div id="length-container">
+            <p>Password Length</p>
+            <p slider-val-display>0</p>
+        </div> 
+        <input type="range" min="1" max="20" step="1" slider>
+        <div>
+            <input type="checkbox" id="for-uppercase">
+            <label for="for-uppercase">Include Uppercase</label>
+        </div>
+        <div>
+            <input type="checkbox" id="for-lowercase">
+            <label for="for-upppercase">Include Lowercase</label>
+        </div>
+        <div>
+            <input type="checkbox" id="for-numbers">
+            <label for="for-numbers">Include Numbers</label>
+        </div>
+        <div>
+            <input type="checkbox" id="for-symbols">
+            <label for="for-symbols">Include Symbols</label>
+        </div>
+        <div>
+            <p>Strength</p>
+            <div strength-indicator></div>
+        </div>
+        <button generate-btn>GENERATE PASSWORD</button>
+    </div>
+
+    <script src="https://kit.fontawesome.com/b47509ea51.js" crossorigin="anonymous"></script>
+    <script src="scripts.js "></script>
+</body>
+</html>

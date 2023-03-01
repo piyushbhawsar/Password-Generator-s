@@ -72,7 +72,7 @@ function calcStrength() {
     }
 }
 
-// await use karna hai ,& it works only in async func()
+// async func() used cause usme hi await works
 async function copyContent() {
     //returns promise , so jab tak ye complete na ho , we want copied na print ho -> so await keyword
     //may give errror / promise reject -> errror handling
